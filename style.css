@@ -1,7 +1,0 @@
-.hoverZoom{
-    /* box-shadow: 0 0 11px rgba(33,33,33,.2); */
-    transition: transform .2s;
-}
-.hoverZoom:hover{
-    transform: scale(1.2);
-}
