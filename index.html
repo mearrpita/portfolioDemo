@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <!-- cdn link for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bulma css link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sectionNavBar">
+        <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#"><i class="fa-solid fa-house"></i></a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">HOME</a>
+                    <a class="navbar-item">ACHIEVEMENT</a>
+                    <a class="navbar-item" href="#blog">BLOG</a>
+                    <a class="navbar-item" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="navbar-item" href="https://github.com/arrpiita"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="contentPage has-background-danger-light">
+        <div class="columns ml-6">
+            <div class="column mt-6">
+                <h1 class="is-size-3 hoverZoom">
+                    <strong> Hey I'm Arpita <span class="has-text-primary">Subudhi. 🙋‍♀️</span></strong>
+                </h1>
+                <p class="mt-4 is-size-4 has-text-link">He who forgives and acknowledges himself, that is what it truly
+                    means to be strong!</p>
+            </div>
+            <div class="column ml-6  mr-6 mt-6 hoverZoom">
+                <img src="image/user.png" alt="" class="">
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionBlogs has-background-white-ter mb-5" id="blog">
+        <h1 class="has-text-centered mt-1 is-size-2 has-text-danger">BLOGS</h1>
+        <div class="columns">
+            <div class="column mt-6 hoverZoom">
+                <img src="image/user2.png" alt="" class="">
+            </div>
+            <div class="column ml-6  mr-6 mt-6">
+                <p><strong>
+                        <span class="has-text-info is-size-4 textZoom">Ninja Hattori</span> is a popular Japanese manga
+                        and anime series that has captured the hearts of children
+                        around the world. Created by <span class="has-text-info is-size-4">Fujiko Fujio,</span> the
+                        series follows the adventures of a young ninja named
+                        Hattori who lives with a family in Japan.Ninja Hattori is a popular <span
+                            class="has-text-info is-size-4"> Japanese manga</span> and anime series
+                        that has captured the hearts of children around the world. Created by Fujiko Fujio, the series
+                        follows the adventures of a young ninja named <span class="has-text-info is-size-4">
+                            Hattori</span> who lives with a family in Japan.Ninja Hattori
+                        is a popular Japanese manga and <span class="has-text-info is-size-4"> anime series </span> that
+                        has captured the hearts of children around the
+                        world.
+                    </strong>
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!---------------------------------
+         this is footer section  
+        ------------------------------->
+    <section class="footerSection has-background-grey">
+        <footer >
+            <div class=" has-text-centered is-size-3 has-text-white"> 
+                <p class="">&#169 Created by Arpita😊</p>
+            </div>
+        </footer>
+        <!-- <footer class="footer has-background-grey">
+            <div class="content has-text-centered has-text-white is-size-4">
+              <p>&copy licenced reserved by Arpita😊 </p>
+            </div>
+          </footer> -->
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
